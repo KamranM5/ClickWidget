@@ -1,0 +1,21 @@
+.btnTheme .btnText,
+#pageHeader.fixedPosition,
+.featColumn:before,
+.tryPetAside,
+.ftSocialNetworks > li > a:hover {
+	background-color: #6720df;
+}
+
+.btnTheme:before,
+.afDefList .icn,
+.afTabsList .nav-link.active,
+.clientQuote q:before,
+.tickList > li:before {
+	color: #6720df;
+}
+
+.btnTheme:before,
+.btnTheme .btnText,
+.afTabsList .nav-link.active {
+	border-color: #6720df;
+}

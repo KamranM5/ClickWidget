@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the page title -->
+	<title>Asaas - Saas software and marketing landing page</title>
+	<!-- inlcude google cabin font cdn link -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+		rel="stylesheet">
+	<!-- inlcude google nunito font cdn link -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap"
+		rel="stylesheet">
+	<!-- include the site bootstrap stylesheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+	<!-- include theme color setting stylesheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/colors.css')}}">
+	<!-- include the site responsive stylesheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+</head>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f5f5f5;
+	}
+
+	.form-container {
+		max-width: 100%;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.form-content {
+		max-width: 500px;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	label {
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	textarea {
+		height: 100px;
+		resize: vertical;
+	}
+
+	button {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		background-color: #4CAF50;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #45a049;
+	}
+</style>
+
+<body>
+	<!-- pageWrapper -->
+	<div id="pageWrapper">
+		<div class="phStickyWrap">
+			<!-- pageHeader -->
+			<header id="pageHeader" class="w-100 headerFixer">
+				<div class="container">
+					<!-- hdHolder -->
+					<div class="hdHolder position-relative pt-2 pb-2 pt-lg-4 pb-lg-4 pt-xl-7 pb-xl-7">
+						<div class="row">
+							<div class="col-4 col-md-2">
+								<!-- logo -->
+								<div class="logo mt-1">
+									<a href="javascript:void(0);">
+										<img src="static/images/logo.png" class="img-fluid" alt="ClickWidget">
+									</a>
+								</div>
+							</div>
+							<div class="col-8 col-md-10 position-static">
+								<!-- pageNav -->
+								<nav id="pageNav"
+									class="navbar navbar-expand-md navbar-dark justify-content-end p-0 align-items-start position-static">
+									<!-- pageMainNavCollapse -->
+									<div class="collapse navbar-collapse pageMainNavCollapse justify-content-end"
+										id="pageMainNavCollapse">
+										<!-- mainNavigation -->
+										<ul class="navbar-nav mainNavigation fwSemi pt-md-2">
+											<li class="nav-item">
+												<a class="nav-link" href="#pageWrapper">Главная <span
+														class="sr-only">(current)</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#scrollTo2">Для чего?</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#scrollTo5">Стоимость</a>
+											</li>
+
+										</ul>
+									</div>
+									<!-- hdBtn -->
+									<a href="javascript:void(0);"
+										class="btn btn-info font-weight-normal text-capitalize hdBtn ml-md-3 ml-md-6 ml-lg-12 position-relative border-0 p-0"
+										data-hover="Попробовать">
+										<span class="d-block btnText">Попробовать</span>
+									</a>
+									<!-- pageNavOpener -->
+									<button class="navbar-toggler pageNavOpener ml-3" type="button"
+										data-toggle="collapse" data-target="#pageMainNavCollapse"
+										aria-controls="pageMainNavCollapse" aria-expanded="false"
+										aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<main>
+			<!-- introBlock -->
+			<section class="introBlock d-flex w-100 position-relative text-white bg-secondary">
+				<div class="w-100 d-flex align-items-center">
+					<!-- ibHolder -->
+					<div class="w-100 position-relative ibHolder py-19 py-md-23 py-xl-29">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-12 col-md-6">
+									<div class="captionWrap position-relative">
+										<div class="wow fadeInUp" data-wow-delay="0.5s">
+											<h1 class="text-white font-weight-bold mb-5">Возможность общаться с Вашими
+												клиентами через Telegram </h1>
+										</div>
+										<div class="wow fadeInUp" data-wow-delay="1s">
+											<p>Попробуйте прямо сейчас!</p>
+										</div>
+										<div class="wow fadeInUp" data-wow-delay="1.5s">
+											<a href="javascript:void(0);"
+												class="btn btn-info btnMin align-top mt-6 p-0 border-0 position-relative"
+												data-hover="Try it for Free">
+												<span class="d-block btnText">Подключить</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 d-none d-md-block imageWrap wow bounceInRight"
+									data-wow-delay="2s">
+									<!-- imgHolder -->
+									<div class="imgHolder pl-7 pl-xl-12 position-relative">
+										<img src="static/images/tg.jpg" class="img-fluid" alt="image description">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- svgBg -->
+				<svg class="svgBg">
+					<defs>
+						<clipPath id="path01" clipPathUnits="objectBoundingBox">
+							<path d="M 1 0 L 0.93 0 C 0.7 0.18 0.77 0.26 0.51 0.34 Q 0.36 0.38 0.52 1 L 1 1 Z"></path>
+						</clipPath>
+					</defs>
+					<rect width="100%" height="100%" style="clip-path: url(asaas.html#path01);" fill="#7730ef"></rect>
+				</svg>
+				<!-- ibBgPattern -->
+				<span class="position-absolute w-100 h-100 ibBgPattern"
+					style="background-image: url(static/images/bgShapes01.png);"></span>
+			</section>
+			<!-- sponsorsAside -->
+			<aside class="sponsorsAside position-relative text-center">
+				<div class="container">
+
+				</div>
+			</aside>
+			<div class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+				<!-- featureBlock -->
+				<section id="scrollTo2"
+					class="featureBlock pt-8 pb-8 pt-md-13 pb-md-13 pt-lg-19 pb-lg-20 pt-xl-23 pb-xl-24">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-10 offset-lg-1">
+								<!-- headingHead -->
+								<header
+									class="headingHead textMedium text-center mb-8 mb-lg-10 mb-xl-14 wow bounceInUp">
+									<h2 id="scrollTo2" class="mb-5">Как работает Telegram чат для сайта?</h2>
+								</header>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+								<!-- featColumn -->
+								<article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+									<span
+										class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5"
+										data-theme="pink">
+										<span class="w-100 d-block p-1">
+											<img src="static/images/1.jpg" width="35" height="31" alt="icon">
+										</span>
+									</span>
+									<h3 class="h6 fontBase font-weight-normal mb-2">
+										<a href="javascript:void(0);">Этап первый</a>
+									</h3>
+									<p>Клиент заходит на Ваш сайте и спустя несколько секунд либо появляется наш виджет
+										и идет нахуй</p>
+								</article>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+								<!-- featColumn -->
+								<article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+									<span
+										class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5"
+										data-theme="info">
+										<span class="w-100 d-block p-1">
+											<img src="static/images/2.jpg" width="35" height="33" alt="icon">
+										</span>
+									</span>
+									<h3 class="h6 fontBase font-weight-normal mb-2">
+										<a href="javascript:void(0);">Этап второй</a>
+									</h3>
+									<p>Клиент начинает общение в окне сайта </p>
+								</article>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+								<!-- featColumn -->
+								<article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+									<span
+										class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5"
+										data-theme="yellow">
+										<span class="w-100 d-block p-1">
+											<img src="static/images/3.jpg" width="35" height="33" alt="icon">
+										</span>
+									</span>
+									<h3 class="h6 fontBase font-weight-normal mb-2">
+										<a href="javascript:void(0);">Этап третий</a>
+									</h3>
+									<p>У Вас создается новый чат в Telegram</p>
+
+								</article>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 d-flex wow flipInX" data-wow-delay="0.5s">
+								<!-- featColumn -->
+								<article class="featColumn shadow-lg position-relative w-100 pt-8 pb-5 px-6 mb-6">
+									<span
+										class="icnWrap d-flex align-items-center justify-content-center text-center rounded-circle mb-5"
+										data-theme="purple">
+										<span class="w-100 d-block p-1">
+											<img src="static/images/4.jpg" width="32" height="32" alt="icon">
+										</span>
+									</span>
+									<h3 class="h6 fontBase font-weight-normal mb-2">
+										<a href="javascript:void(0);">Этап четвертый</a>
+									</h3>
+									<p>Вы отвечаете клиенту в Telegram, а сообщение ему приходит на сайте. Вы
+										продолжаете общение</p>
+								</article>
+							</div>
+						</div>
+						<!-- btnWrap -->
+
+					</div>
+				</section>
+			</div>
+
+			<!-- allFeatBlock -->
+			<section class="allFeatBlock pt-7 pt-md-10 pt-lg-15 pt-xl-23 pb-3 pb-lg-10 pb-xl-14">
+				<div class="container">
+					>
+					<!-- afColumnsWrap -->
+					<div class="afColumnsWrap">
+						<!-- afColumn -->
+						<article class="afColumn mb-7 mb-md-11 mb-lg-18">
+							<div class="row align-items-center">
+								<div class="col-12 col-md-6 wow slideInLeft">
+									<!-- imgHolder -->
+									<div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+										<img src="static/images/img02.png" class="img-fluid" alt="image description">
+										<!-- bgPattern -->
+										<span class="bgPattern position-absolute"
+											style="background-image: url(static/images/bgShapes03.png);"></span>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 wow slideInRight">
+									<div class="extraWrap pl-md-7 pl-lg-14">
+										<!-- titleWrap -->
+										<header class="titleWrap">
+											<h3 class="mb-5">Все необходимые функции.</h3>
+										</header>
+										<ul class="list-unstyled flItemsList">
+											<li>
+												<span class="icnWrap mt-1 mr-4">
+													<img src="static/images/ico06.svg" width="32" height="32"
+														alt="icon">
+												</span>
+												<div class="descrWrap">
+													<h4 class="h6 h6Small">Отправка сообщений</h4>
+													<p>Базовая возможность любого мессенджера</p>
+												</div>
+											</li>
+											<li>
+												<span class="icnWrap mt-1 mr-4">
+													<img src="static/images/ico06	.svg" width="35" height="35"
+														alt="icon">
+												</span>
+												<div class="descrWrap">
+													<h4 class="h6 h6Small">Отправка фото и видео файлов</h4>
+													<p>Может очень понадобиться в процессе общения с клиентом для более
+														детального выявления его потребностей</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</article>
+						<!-- afColumn -->
+						<article class="afColumn mb-7 mb-md-11 mb-lg-18">
+							<div class="row align-items-center">
+								<div class="col-12 col-md-6 wow slideInLeft">
+									<!-- imgHolder -->
+									<div class="imgHolder position-relative mx-auto mb-4 mb-md-0">
+										<img src="static/images/img03.png" class="img-fluid" alt="image description">
+										<!-- bgPattern -->
+										<span class="bgPattern position-absolute"
+											style="background-image: url(static/images/bgShapes03.png);"></span>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 wow slideInRight">
+									<div class="extraWrap pr-md-7 pr-lg-14">
+										<!-- titleWrap -->
+										<header class="titleWrap">
+											<h3 class="mb-5">Простое подключение</h3>
+											<p>Подключение системы к Вашему сайту - максимально простой процесс! С ним
+												справится абсолютно любой, особенно с помощью нашей команды)</p>
+										</header>
+									</div>
+								</div>
+							</div>
+						</article>
+						<!-- afColumn -->
+					</div>
+				</div>
+			</section>
+			<!-- tryPetAside -->
+			<aside class="tryPetAside text-center text-white py-5 py-lg-8 wow pulse">
+				<div class="container">
+					<p class="mb-0">Готовы попробовать? Это быстро и очень просто! <a href="javascript:void(0);"
+							class="btn btnWhite mt-3 mt-md-0 mx-md-4 mx-lg-10 btnMin p-0 border-0 position-relative"
+							data-hover="Try it for Free"><span class="d-block btnText">Попробуйте бесплатно</span></a>
+					</p>
+				</div>
+			</aside>
+			<div id="scrollTo5" class="mt-md-n12 mt-lg-n14 pt-md-12 pt-lg-14">
+				<!-- plansBlock -->
+				<section class="plansBlock pt-7 pt-md-11 pt-lg-15 pb-3 pb-md-7 pt-xl-22 pb-xl-12">
+					<div class="container">
+						<!-- headingHead -->
+						<header class="headingHead textMedium text-center mb-8 mb-md-11 mb-lg-15 wow bounceInUp">
+							<h2 class="mb-5">Выберите тарифный план</h2>
+
+						</header>
+						<div class="row justify-content-center">
+							<div class="col-12 col-sm-6 col-lg-4 d-flex wow pulse" data-wow-delay="0.5s">
+								<!-- planColumn -->
+								<article
+									class="planColumn position-relative mb-6 pt-6 pb-6 pb-md-8 px-4 px-md-6 w-100 d-flex flex-column shadow-lg bg-white">
+									<div class="pcHolder flex-grow-1">
+										<!-- headWrap -->
+										<header class="headWrap mb-7">
+											<!-- symbolWrap -->
+											<span class="symbolWrap d-block mb-3">
+												<img src="static/images/ico08.png" class="img-fluid" alt="symbol">
+											</span>
+											<h3 class="h5 mb-1">Тестовый</h3>
+											<em class="d-block textEm">Идеально подходит для теста системы</em>
+										</header>
+										<h4 class="h1 fontBase fwSemi h1Medium mb-1">0</h4>
+										<em class="d-block textEm">Ежемесячно</em>
+										<!-- tickList -->
+										<ul class="list-unstyled tickList mt-7">
+											<li>Стандартный чат </li>
+											<li>Автоматические ответы по времени</li>
+											<li>1 сайт</li>
+											<li>5 цветовых тем </li>
+											<li>До 10 чатов</li>
+											<li>Тестовый период - </li>
+										</ul>
+									</div>
+									<!-- btnWrap -->
+									<footer class="btnWrap flex-shrink-0 pt-8">
+										<a href="javascript:void(0);"
+											class="btn btn-primary d-block w-100 p-0 border-0 position-relative"
+											data-hover="Choose Plan">
+											<span class="d-block btnText">Выберать план</span>
+										</a>
+									</footer>
+								</article>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 d-flex wow pulse" data-wow-delay="0.5s">
+								<!-- planColumn -->
+								<article
+									class="planColumn position-relative mb-6 pt-6 pb-6 pb-md-8 px-4 px-md-6 w-100 d-flex flex-column shadow-lg bg-white"
+									data-pack="Best Pack">
+									<div class="pcHolder flex-grow-1">
+										<!-- headWrap -->
+										<header class="headWrap mb-7">
+											<!-- symbolWrap -->
+											<span class="symbolWrap d-block mb-3">
+												<img src="static/images/ico08.png" class="img-fluid" alt="symbol">
+											</span>
+											<h3 class="h5 mb-1">Основной</h3>
+											<em class="d-block textEm">Идеальный пакет для малого бизнеса</em>
+										</header>
+										<h4 class="h1 fontBase fwSemi h1Medium mb-1">199 руб</h4>
+										<em class="d-block textEm">Ежемесячно</em>
+										<!-- tickList -->
+										<ul class="list-unstyled tickList mt-7">
+											<li>10 Brand</li>
+											<li>Upto 10 User</li>
+											<li>50 Videos, 1000 static/images/month</li>
+											<li>24/7 Online Support</li>
+											<li>Unlimited Templates</li>
+											<li>Upload Upto 500 Gb Data with extra Subscription option</li>
+										</ul>
+									</div>
+									<!-- btnWrap -->
+									<footer class="btnWrap flex-shrink-0 pt-8">
+										<a href="javascript:void(0);"
+											class="btn btnTheme d-block w-100 p-0 border-0 position-relative"
+											data-hover="Choose Plan">
+											<span class="d-block btnText">Выберать план</span>
+										</a>
+									</footer>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="form-container">
+				<div class="form-content">
+					<h2>Обратная связь</h2>
+					<form action="/" method="POST">
+						<h6>В данный момент продукт находится на финальной стадии разработки. Но Вы можете оставить свои
+							контакты и
+							мы свяжемся с Вами и предоставим скидку!</h6>
+						<div class="form-group">
+							<label for="name">Имя:</label>
+							<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Сообщение:</label>
+							<textarea type="tel" id="phone" name="phone" requiredplaceholder="Введите ваш номер"
+								required></textarea>
+						</div>
+						<button type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+
+		</main>
+		<!-- ftAreaWrap -->
+		<div class="ftAreaWrap bg-primary text-gray777fa1 wow fadeIn" data-wow-delay="0.5s">
+			<!-- footerAside -->
+			<aside class="footerAside pt-20 pt-md-10 pt-lg-16 pb-1 pb-md-4 position-relative text-center text-sm-left">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-5 mb-6 order-md-2">
+							<!-- ftNav -->
+							<nav class="ftNav">
+								<div class="row">
+									<div class="col-12 col-sm-6 mb-2 mb-md-6">
+										<h3 class="h6 text-white mb-4">Больше информации</h3>
+										<!-- ftLinksList -->
+										<ul class="list-unstyled ftLinksList mb-0">
+											<li>
+												<a href="javascript:void(0);">Почему выбирают нас ?</a>
+											</li>
+											<li>
+												<a href="/about">Про нас</a>
+											</li>
+											<li>
+												<a href="https://t.me/vlommmer">Support</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3 mb-6 order-md-1 position-static">
+							<!-- ftLogo -->
+							<div class="ftLogo mb-6 mx-auto mx-md-0">
+								<a href="javascript:void(0);">
+									<img src="static/images/logo.png" class="img-fluid" alt="asaas">
+								</a>
+							</div>
+							<!-- socialNetworks -->
+							<ul
+								class="list-unstyled socialNetworks ftSocialNetworks d-flex justify-content-center justify-content-md-start mx-n1">
+								<li>
+									<a href="https://t.me/vlommmer">
+										<i class="fab fa-telegram"><span class="sr-only">Telegram</span></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- pageFooter -->
+			<footer id="pageFooter" class="text-center fontAlter">
+				<div class="container">
+					<!-- pfHolder -->
+
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script src="static/js/jquery-3.4.1.min.js"></script>
+	<!-- include bootstrap popper JavaScript -->
+	<script src="static/js/popper.min.js"></script>
+	<!-- include bootstrap JavaScript -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<!-- include custom JavaScript -->
+	<script src="static/js/jqueryCustom.js"></script>
+	<!-- include fontAwesome -->
+	<script src="static/js/391f644c42.js"></script>
+
+</body>
+
+</html>
